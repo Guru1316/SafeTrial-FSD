@@ -31,7 +31,6 @@ Thumbs.db
 # 🟢 ENV / SECRETS
 ###################################
 .env
-application.properties
 application.yml
 
 ###################################
