@@ -6,7 +6,6 @@
 *.jar
 *.war
 *.ear
-*.log
 
 ###################################
 # 🟢 MAVEN
@@ -48,16 +47,32 @@ application.yml
 /ai-service/.venv/
 
 ###################################
+# 🟢 REACT FRONTEND
+###################################
+/frontend/node_modules/
+/frontend/dist/
+/frontend/build/
+
+# React Env Files
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+###################################
 # 🟢 LOG FILES
 ###################################
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 ###################################
-# 🟢 NODE (for frontend later)
+# 🟢 CACHE FILES
 ###################################
-node_modules/
-dist/
-build/
+.cache/
+.parcel-cache/
 
 ###################################
 # 🟢 MISC

@@ -19,6 +19,11 @@ public class TripPlanService {
         return repository.save(trip);
     }
 
+    // ✅ Get ALL trips
+    public List<TripPlan> getAllTrips() {
+        return repository.findAll();
+    }
+
     // ✅ Get trips by tourist
     public List<TripPlan> getTrips(Long touristId) {
         return repository.findByTouristId(touristId);

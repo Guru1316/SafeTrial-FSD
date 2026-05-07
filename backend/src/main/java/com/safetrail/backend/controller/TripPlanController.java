@@ -20,6 +20,12 @@ public class TripPlanController {
         return service.createTrip(trip);
     }
 
+    // ✅ Get ALL trips (admin view)
+    @GetMapping
+    public List<TripPlan> getAllTrips() {
+        return service.getAllTrips();
+    }
+
     // ✅ Get Trips by Tourist
     @GetMapping("/{touristId}")
     public List<TripPlan> getTrips(@PathVariable Long touristId) {
